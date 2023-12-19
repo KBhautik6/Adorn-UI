@@ -12,7 +12,7 @@ export const Textcontent = styled.div`
 
   ${({ as }) =>
     as &&
-    css`
+    css`git 
       line-height: 0.5;
       font-weight: 600;
       font-family: "Rubik", sans-serif;
