@@ -1,16 +1,21 @@
-
 import React from "react";
-import { Alert, OutlineAlert} from "./Alert.Styled";
+import { Alert } from "./Alert.Styled";
 
-export const SimpleAlert = ({ type, text }) => (
-  <Alert type={type}>
+export const SimpleAlert = ({
+  type,
+  text,
+  variant,
+  isoutline,
+  border,
+  ishover,
+}) => (
+  <Alert
+    type={type}
+    variant={variant}
+    isoutline={isoutline}
+    border={border}
+    ishover={ishover}
+  >
     {text}
   </Alert>
 );
-
-export const OutlineSimpleAlert = ({ variant, text }) => (
-  <OutlineAlert type={type}>
-    {text}
-  </OutlineAlert>
-);
-
