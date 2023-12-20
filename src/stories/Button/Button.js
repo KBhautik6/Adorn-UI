@@ -12,7 +12,6 @@ export const Button = ({
   hovers,
 }) => {
   return (
-    <>
       <StyledButtonComponent
         type={type}
         variant={variant}
@@ -23,6 +22,5 @@ export const Button = ({
         {icon}
         {text}
       </StyledButtonComponent>
-    </>
   );
 };
