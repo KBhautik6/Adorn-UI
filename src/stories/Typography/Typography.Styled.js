@@ -1,13 +1,13 @@
 import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
-export const Styledheading = styled.div`
+export const StyledHeading = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const Textcontent = styled.div`
+export const TextContent = styled.div`
   color: ${({ type }) => theme?.[type]};
 
   ${({ as }) =>
