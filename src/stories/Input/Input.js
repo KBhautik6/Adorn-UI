@@ -10,7 +10,9 @@ export const Input = ({ label, type }) => {
     <StyledContainer>
       <StyledInputLabel label={label}>{label}</StyledInputLabel>
       <StyledUserInput type={type} />
-      {label === "Password" && <div style={{color:'red'}} >*Password is incorrect</div>}
+      {label === "Password" && (
+        <div style={{ color: "red" }}>*Password is incorrect</div>
+      )}
     </StyledContainer>
   );
-}
+};

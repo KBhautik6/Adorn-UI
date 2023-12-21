@@ -9,7 +9,7 @@ export default {
 
 export const UsernameInput = () => (
   <StyledContainer>
-    <Input label="Username"  type="text" />
-    <Input label="Password"  type="password" />
+    <Input label="Username" type="text" />
+    <Input label="Password" type="password" />
   </StyledContainer>
 );
