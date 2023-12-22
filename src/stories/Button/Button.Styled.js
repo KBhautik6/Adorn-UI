@@ -2,35 +2,38 @@ import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 export const StyledButtonComponent = styled.button`
-  diplay: inline-block;
-  font-size: 1.4rem;
+  text-align:center;
+  text-transform:uppercase;
+  font-size: 1.rem;
   font-weight: 600;
-  border: 2px solid;
+  text-align:center;
+  padding:10px 20px;
+  border: 2px solid ;
+  border-color:${theme.white};
 
-  ${({ type, outline, border }) => css`
-    background-color: ${outline ? "transparent" : theme?.[type]};
-    color: ${outline ? theme?.[type] : theme.white};
-    border-color: ${border ? "transparent" : theme?.[type]};
-  `}
-
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px 20px;
-
-  ${({ type, outline, hovers }) => css`
-    background-color: ${outline ? "transparent" : theme?.[type]};
-    color: ${outline ? theme?.[type] : theme.white};
-    ${!hovers &&
-    css`
-      &:hover,
-      &:active {
-        background-color: ${outline ? theme?.[type] : theme?.[type]};
-        color: white;
-      }
-    `}
-  `}
+  background-color:${({colorinput})=>colorinput==="secondary"?theme.white:theme?.[colorinput]};
+  color:${({colorinput})=>colorinput==="secondary"?theme?.[colorinput]:theme.white};
 `;
+
+export const StyledOutlineButton=styled(StyledButtonComponent)`
+  border:2px solid ;
+  border-color:${({colorinput})=>theme?.[colorinput]};
+  color:${({colorinput})=>theme?.[colorinput]};
+  background-color:${({inputcolor})=>theme?.[inputcolor]};
+  
+  &:hover,
+  &:active{
+    background-color:${({colorinput})=>theme?.[colorinput]};
+    color:${theme.white}; 
+  }
+`
+
+export const StyledButtontext=styled(StyledButtonComponent)`
+  color:${({colorinput})=>theme?.[colorinput]};
+  bottom: 2px solid transparent;
+  background-color:transparent;
+`
+
 export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;

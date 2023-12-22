@@ -23,15 +23,10 @@ export const ContainedButton = () => (
 
 export const OutlineFloatingButton = () => (
   <StyledContainer>
-    <Button type="primary" variant="outline" text="Primary Button" outline />
-    <Button
-      type="secondary"
-      variant="outline"
-      text="Secondary Button"
-      outline
-    />
-    <Button type="success" variant="outline" text="Successon Button" outline />
-    <Button type="warning" variant="outline" text="Warning Button" outline />
+    <Button type="primary" variant="outline" text="Primary Button" />
+    <Button type="primary" variant="outline" text="Primary Button" />
+    <Button type="success" variant="outline" text="Successon Button" />
+    <Button type="warning" variant="outline" text="Warning Button" />
   </StyledContainer>
 );
 
@@ -43,7 +38,6 @@ export const IconButton = () => (
       type="primary"
       variant="outline"
       text="Save button"
-      outline
       icon={<FaSave />}
     />
     <Button
@@ -58,38 +52,14 @@ export const IconButton = () => (
 // Starting new stories of button name called "Text"
 
 export const Text = () => (
-  <Container>
-    <Button
-      type="primary"
-      variant="container"
-      text="Primary link button"
-      outline
-      border
-      hovers
-    />
+  <StyledContainer>
+    <Button type="primary" variant="TextButton" text="Primary link button" />
     <Button
       type="secondary"
-      variant="container"
+      variant="TextButton"
       text="Secondary link button"
-      outline
-      border
-      hovers
     />
-    <Button
-      type="success"
-      variant="container"
-      text="Succesor link button"
-      outline
-      border
-      hovers
-    />
-    <Button
-      type="warning"
-      variant="container"
-      text="Warning link button"
-      outline
-      border
-      hovers
-    />
-  </Container>
+    <Button type="success" variant="TextButton" text="Succesor link button" />
+    <Button type="warning" variant="TextButton" text="Warning link button" />
+  </StyledContainer>
 );
