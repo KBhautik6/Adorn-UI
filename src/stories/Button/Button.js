@@ -8,7 +8,7 @@ import {
 export const Button = ({ type, variant, text, icon }) => {
   if (variant === "container") {
     return (
-      <StyledButtonComponent colorinput={type}>
+      <StyledButtonComponent type={type}>
         {icon} {text}
       </StyledButtonComponent>
     );
@@ -16,14 +16,14 @@ export const Button = ({ type, variant, text, icon }) => {
 
   if (variant === "outline") {
     return (
-      <StyledOutlineButton colorinput={type}>
+      <StyledOutlineButton type={type}>
         {icon} {text}
       </StyledOutlineButton>
     );
   }
 
-  if (variant === "TextButton") {
-    return <ButtonText colorinput={type}>{text}</ButtonText>;
+  if (variant === "text") {
+    return <ButtonText type={type}>{text}</ButtonText>;
   }
 
   return null;
