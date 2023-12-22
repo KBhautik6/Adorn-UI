@@ -3,6 +3,7 @@ const theme = {
     secondary: "#FF8242",
     success: "#07CB6E",
     warning: "#F3B664",
+    cardBg:"rgb(246, 249, 252)",
     cardBorderColor: "#E49393",
     cardTitleColor: "#060047",
     cardTextColor: "#1640D6",
@@ -16,6 +17,8 @@ const theme = {
     badgeBg: "#FF3D00",
     badgeText: "#fff",
     white: "#f6f9fc",
+    black:'#000',
+
   };
   export default theme;
   
