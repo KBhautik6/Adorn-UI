@@ -10,15 +10,15 @@ export const StyledAlert = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   font-size: 14px;
-  color: ${({ type }) => (type === "secondary" ? theme?.[type] : theme.white)};
-  background-color: ${({ type }) =>
-    type === "secondary" ? theme.white : theme?.[type]};
+  color: ${({ colorinput }) => (colorinput === "secondary" ? theme?.[colorinput] : theme.white)};
+  background-color: ${({ colorinput}) =>
+    colorinput === "secondary" ? theme.white : theme?.[colorinput]};
 `;
 
 export const StyledOutlineAlert = styled(StyledAlert)`
   background-color: transparent;
-  border: 1px solid ${({ type }) => theme?.[type]};
-  color: ${({ type }) => theme?.[type]};
+  border: 1px solid ${({colorinput }) => theme?.[colorinput]};
+  color: ${({colorinput }) => theme?.[colorinput]};
 `;
 
 export const StyledHeading = styled.div`

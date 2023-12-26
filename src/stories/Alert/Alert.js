@@ -1,13 +1,12 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import { StyledAlert, StyledOutlineAlert } from "./Alert.Styled";
 
-export const Alert = ({ type, text, variant }) => {
+export const Alert = ({colorinput, text, variant }) => {
   if (variant === "contained") {
-    return <StyledAlert type={type}>{text}</StyledAlert>;
+    return <StyledAlert colorinput={colorinput}>{text}</StyledAlert>;
   }
   if (variant === "outlined") {
-    return <StyledOutlineAlert type={type}>{text}</StyledOutlineAlert>;
+    return <StyledOutlineAlert colorinput={colorinput}>{text}</StyledOutlineAlert>;
   }
   return null;
 };

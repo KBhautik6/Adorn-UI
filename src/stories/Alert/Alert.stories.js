@@ -10,22 +10,22 @@ export default {
 export const Alerts = () => (
   <StyledHeading>
     <Alert
-      type="primary"
+      colorinput="primary"
       variant="contained"
       text="Primary! This is a Primary Alert - Check it now!"
     />
     <Alert
-      type="secondary"
+      colorinput="secondary"
       variant="contained"
       text="Secondary! This is a Secondary Alert - Check it now!"
     />
     <Alert
-      type="success"
+      colorinput="success"
       variant="contained"
       text="Success! This is a Success Alert - Check it now!"
     />
     <Alert
-      type="warning"
+      colorinput="warning"
       variant="contained"
       text="Warning! This is a Warning Alert - Check it now!"
     />
@@ -35,22 +35,22 @@ export const Alerts = () => (
 export const OutlineAlerts = () => (
   <StyledHeading>
     <Alert
-      type="primary"
+      colorinput="primary"
       variant="outlined"
       text="Primary! This is a Primary Outline Alert - Check it now!"
     />
     <Alert
-      type="secondary"
+      colorinput="secondary"
       variant="outlined"
       text="Secondary! This is a Secondary Outline Alert - Check it now!"
     />
     <Alert
-      type="success"
+      colorinput="success"
       variant="outlined"
       text="Success! This is a Success Outline Alert - Check it now!"
     />
     <Alert
-      type="warning"
+      colorinput="warning"
       variant="outlined"
       text="Warning! This is a Warning Outline Alert - Check it now!"
     />
