@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { theme } from "../theme";
+import { theme } from "../../theme";
 
 export const Alert = styled.button`
   border: 2px solid;
