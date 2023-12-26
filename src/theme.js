@@ -3,9 +3,10 @@ export const theme={
     secondary: "#FF8242",
     success: "#07CB6E",
     warning: "#F3B664",
-    cardBorder: "#E49393",
-    cardTitle: "#060047",
-    cardText: "#1640D6",
+    danger:"#F3B664",
+    cardBorderColor: "#E49393",
+    cardTitleColor: "#060047",
+    cardTextColor: "#1640D6",
     cardButtonBg: "#E90064",
     cardButtonHoverBg: "#FF5F9E",
     textLink: "#E26EE5",
@@ -15,6 +16,6 @@ export const theme={
     buttonOutlinedSecondaryTextHover: "#fff",
     badgeBg: "#FF3D00",
     badgeText: "#fff",
-    white: "#f6f9fc",
-    black: "#000"
+    white: "#f6f9fc",    
+    black:"#000"
 };
