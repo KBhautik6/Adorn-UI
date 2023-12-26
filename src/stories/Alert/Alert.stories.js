@@ -21,6 +21,7 @@ export const Alerts = () => (
     />
     <Alert
       type="success"
+      variant="contained"
       text="Success! This is a Success Alert - Check it now!"
     />
     <Alert
