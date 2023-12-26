@@ -9,9 +9,9 @@ export const Alert = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   font-size: 1.4rem;
-  ${({ type, isoutline, border }) => css`
-    background-color: ${isoutline ? "transparent" : theme?.[type]};
-    color: ${isoutline ? theme?.[type] : "white"};
+  ${({ type, isOutLine, border }) => css`
+    background-color: ${isOutLine ? "transparent" : theme?.[type]};
+    color: ${isOutLine ? theme?.[type] : theme.white};
     border-color: ${border || "1px solid"};
   `}
 `;
