@@ -16,28 +16,3 @@ export const theme={
     white:'ffffff',
     black:'#000000'
 };
-export const avatar={
-    small:{
-        width:'50px',
-        height:'50px'
-    },
-    medium:{
-        width:'60px',
-        height: '60px'
-    }
-    ,
-
-    large:{
-        width:'60px',
-        height:'80px'
-    },
-    default:{
-        width:'70px',
-        height:'70px'
-    }
-
-}
-
-export const topography={
-    backgroundcolor:'rgb(255, 237, 237)',
-}
