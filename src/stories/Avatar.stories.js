@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "./Avatar";
-import { StyledAvatarContainer } from "./Avatar.Styled";
+import { StyledAvatarContainer } from "./Avatar.styled";
 
 export default {
   title: "Avatar",

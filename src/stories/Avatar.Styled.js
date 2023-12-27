@@ -16,7 +16,7 @@ export const StyledAvatarContainer = styled.div`
   align-items: center;
 `;
 
-export const DisplayImage = styled.img`
+export const StyledDisplayImage = styled.img`
 
   ${({ shape }) => css`
     border-radius: ${shape === "circle" ? "50%" : "10%"};

@@ -1,8 +1,8 @@
 import React from "react";
-import { DisplayImage } from "./Avatar.Styled";
+import { StyledDisplayImage } from "./Avatar.Styled";
 
 export const Avatar = ({ src, size, shape }) => {
   return( 
-  <DisplayImage src={src} size={size} shape={shape} />
+  <StyledDisplayImage src={src} size={size} shape={shape} />
   );
 };
