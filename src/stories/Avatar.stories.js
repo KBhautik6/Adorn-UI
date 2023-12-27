@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "./Avatar";
-import { AvatarContainer } from "./Avatar.Styled";
+import { StyledAvatarContainer } from "./Avatar.Styled";
 
 export default {
   title: "Avatar",
@@ -8,17 +8,17 @@ export default {
 };
 
 export const SquareProfile = () => (
-  <AvatarContainer>
-    <Avatar url="https://i.pravatar.cc/40" Size={2.4} variant="square" />
-    <Avatar url="https://i.pravatar.cc/60" Size={3.4} variant="square" />
-    <Avatar url="https://i.pravatar.cc/80" Size={4.4} variant="square" />
-  </AvatarContainer>
+  <StyledAvatarContainer>
+    <Avatar src="https://i.pravatar.cc/40" size="small" shape="square" />
+    <Avatar src="https://i.pravatar.cc/60" size="medium" shape="square" />
+    <Avatar src="https://i.pravatar.cc/80" size="large" shape="square" />
+  </StyledAvatarContainer>
 );
 
 export const CircularProfileAvatar = () => (
-  <AvatarContainer>
-    <Avatar url="https://i.pravatar.cc/40" Size={2.4} variant="circle" />
-    <Avatar url="https://i.pravatar.cc/60" Size={3.4} variant="circle" />
-    <Avatar url="https://i.pravatar.cc/80" Size={4.4} variant="circle" />
-  </AvatarContainer>
+  <StyledAvatarContainer>
+    <Avatar src="https://i.pravatar.cc/40" size="small" shape="circle" />
+    <Avatar src="https://i.pravatar.cc/60" size="medium" shape="circle" />
+    <Avatar src="https://i.pravatar.cc/80" size="large" shape="circle" />
+  </StyledAvatarContainer>
 );

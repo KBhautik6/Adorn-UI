@@ -1,6 +1,14 @@
 import styled, { css } from "styled-components";
+import sizes from "../Size";
 
-export const AvatarContainer = styled.div`
+export const StyledAvatarSize = css`
+  ${({ size }) => `
+    width: ${size.width};
+    height: ${size.height};
+  `}
+`;
+
+export const StyledAvatarContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -9,10 +17,10 @@ export const AvatarContainer = styled.div`
 `;
 
 export const DisplayImage = styled.img`
-  ${({ Size }) => css`
-    height: ${Size}rem;
-  `};
+
   ${({ shape }) => css`
-    border-radius: ${shape === "circle" ? "50%" : "20%"};
+    border-radius: ${shape === "circle" ? "50%" : "10%"};
+    margin:0 5px;
+    ${StyledAvatarSize};
   `}
 `;
