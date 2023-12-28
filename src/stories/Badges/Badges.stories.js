@@ -13,19 +13,19 @@ export const BadgesOnAvatar = () => (
       src="https://i.pravatar.cc/40"
       size={2.4}
       variant="square"
-      colortype="success"
+      color="success"
     />
     <Badges
       src="https://i.pravatar.cc/60"
       size={3.4}
       variant="square"
-      colortype="warning"
+      color="warning"
     />
     <Badges
       src="https://i.pravatar.cc/80"
       size={4.4}
       variant="square"
-      colortype="success"
+      color="success"
     />
   </StyledBadgesContainer>
 );
@@ -36,21 +36,21 @@ export const BadgesOnIcon = () => {
       src="https://i.pravatar.cc/40"
       size={2.4}
       variant="iconBadge"
-      colortype="primary"
+      color="primary"
       text="10"
     />
     <Badges
       src="https://i.pravatar.cc/40"
       size={3.4}
       variant="iconBadge"
-      colortype="primary"
+      color="primary"
       text="12"
     />
     <Badges
       src="https://i.pravatar.cc/40"
       size={4.4}
       variant="iconBadge"
-      colortype="primary"
+      color="primary"
       text="14"
     />
   </StyledBadgesContainer>;

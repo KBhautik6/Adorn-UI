@@ -8,12 +8,12 @@ import {
   StyledBadgesIcon,
 } from "./Badges.styled";
 
-export const Badges = ({ src, size, varaint, colortype, text }) => {
+export const Badges = ({ src, size, varaint, color, text }) => {
   if (varaint === "square") {
     return (
       <StyledImageContainer>
         <StyledAvatarImage src={src} size={size} />
-        <StyledBadgeIcon colortype={colortype}>{text}</StyledBadgeIcon>
+        <StyledBadgeIcon color={color}>{text}</StyledBadgeIcon>
       </StyledImageContainer>
     );
   }
@@ -22,7 +22,7 @@ export const Badges = ({ src, size, varaint, colortype, text }) => {
     return (
       <StyledImager>
         <StyledIconImageBadge size={size} src={src} />
-        <StyledBadgesIcon colortype={colortype}>{text}</StyledBadgesIcon>
+        <StyledBadgesIcon color={color}>{text}</StyledBadgesIcon>
       </StyledImager>
     );
   }

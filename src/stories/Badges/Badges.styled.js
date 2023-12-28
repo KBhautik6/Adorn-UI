@@ -20,7 +20,7 @@ export const StyledBadgeIcon = styled.div`
   transform: translateX(50%);
   width: 12px;
   height: 12px;
-  background-color: ${({ colortype }) => theme?.[colortype]};
+  background-color: ${({ color }) => theme?.[color]};
   border-radius: 50%;
   display: inline-block;
   border: 2px solid;
@@ -32,7 +32,7 @@ export const StyledImager = styled.div`
 `;
 
 export const StyledBadgesIcon = styled(StyledBadgeIcon)`
-  background-color: ${({ colortype }) => theme?.[colortype]};
+  background-color: ${({ color }) => theme?.[color]};
   left: 62%;
   top: 7%;
   width: 15px;
