@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledImage } from './Image.styled';
-export const Images = ({ url, Size, variant }) => {
+export const Images = ({ src, size, variant }) => {
   return(
-    <StyledImage src={url} Size={Size} shape={variant} />
+    <StyledImage src={src} size={size} shape={variant} />
   );
 };
