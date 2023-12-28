@@ -9,9 +9,9 @@ export default{
 export const SimpleActionToast=()=>{
     return(
         <StyledToastContainer>
-            <Toast text="Successful toast for user action." colortype="success"></Toast>
-            <Toast text="Warning toast for user action." colortype="warning"></Toast>
-            <Toast text="danger toast for user action." colortype="badgeBg"></Toast>
+            <Toast text="Successful toast for user action." color="success"></Toast>
+            <Toast text="Warning toast for user action." color="warning"></Toast>
+            <Toast text="danger toast for user action." color="badgeBg"></Toast>
         </StyledToastContainer>
     )
 }

@@ -9,10 +9,9 @@ export const StyledToastContainer=styled.div`
     flex-wrap:wrap;
 `
 export const StyledText=styled.p`
-    color:${({colortype})=>theme?.[colortype]};
+    color:${({color})=>theme?.[color]};
     background-color:${theme.white};
-    border:2px solid;
-    border-color:${({colortype})=>theme?.[colortype]};
+    border:2px solid ${({color})=>theme?.[color]};
     padding:15px 50px;
     border-radius:0.4rem;
 `
