@@ -16,16 +16,14 @@ export const StyledAvatarImage = styled.img`
 export const StyledBadgeIcon = styled.div`
   position: absolute;
   left: 52%;
-  /* border-color: ${theme?.white}; */
   top: 66%;
   transform: translateX(50%);
   width: 12px;
   height: 12px;
   background-color: ${({ color }) => theme?.[color]};
-  border-radius: 50%;
   display: inline-block;
-  border: 2px solid;
-  border-color: white;
+  border: 2px solid ${theme.white};
+  border-radius: 50%;
 `;
 
 export const StyledImager = styled.div`
@@ -39,7 +37,7 @@ export const StyledBadgesIcon = styled(StyledBadgeIcon)`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  color: white;
+  color:${theme.white};
   font-size: 12px;
   text-align: center;
 `;
