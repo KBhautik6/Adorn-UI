@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import theme from "../../theme";
+import size from "../../Size"
 
 export const StyledBadgesContainer = styled.div`
   position: relative;

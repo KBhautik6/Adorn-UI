@@ -11,19 +11,19 @@ export const BadgesOnAvatar = () => (
   <StyledBadgesContainer>
     <Badges
       src="https://i.pravatar.cc/40"
-      size={2.4}
+      size="small"
       variant="square"
       color="success"
     />
     <Badges
       src="https://i.pravatar.cc/60"
-      size={3.4}
+      size="medium"
       variant="square"
       color="warning"
     />
     <Badges
       src="https://i.pravatar.cc/80"
-      size={4.4}
+      size="large"
       variant="square"
       color="success"
     />
@@ -34,21 +34,21 @@ export const BadgesOnIcon = () => {
   <StyledBadgesContainer>
     <Badges
       src="https://i.pravatar.cc/40"
-      size={2.4}
+      size="small"
       variant="iconBadge"
       color="primary"
       text="10"
     />
     <Badges
       src="https://i.pravatar.cc/40"
-      size={3.4}
+      size="medium"
       variant="iconBadge"
       color="primary"
       text="12"
     />
     <Badges
       src="https://i.pravatar.cc/40"
-      size={4.4}
+      size="large"
       variant="iconBadge"
       color="primary"
       text="14"
