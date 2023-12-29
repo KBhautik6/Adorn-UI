@@ -18,7 +18,6 @@ export const StyledInputLabel = styled.label`
 `;
 
 export const StyledUserInput = styled.input`
-  margin-bottom: 0px;
   font-family: Rubik, sans-serif;
   padding: 5px;
   width: 20rem;
