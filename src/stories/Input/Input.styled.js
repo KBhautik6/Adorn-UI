@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../theme";
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -12,7 +13,8 @@ export const StyledInputLabel = styled.label`
   margin-right: 10px;
   font-weight: bold;
   font-size: 15px;
-  color: ${(props) => (props.label === "Password" ? "red" : "black")};
+  color: ${(props) =>
+    props.label === "Password" ? theme.primary : theme.black};
 `;
 
 export const StyledUserInput = styled.input`
