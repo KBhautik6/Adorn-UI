@@ -14,7 +14,7 @@ export const StyledInputLabel = styled.label`
   font-weight: bold;
   font-size: 15px;
   color: ${(props) =>
-    props.label === "Password" ? theme.primary : theme.black};
+    props.label === "Password" ?  theme.primary : theme.black};
 `;
 
 export const StyledUserInput = styled.input`
