@@ -20,6 +20,6 @@ export const Circularimages = () => (
 
 export const ResponsiveImage = () => {
   <StyledImageContainer>
-    <Image src="https://i.pravatar.cc/" shape="responsive" />
+    <Image src="https://i.pravatar.cc/" variant="fullscreen" />
   </StyledImageContainer>;
 };

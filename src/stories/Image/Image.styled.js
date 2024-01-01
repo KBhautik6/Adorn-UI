@@ -1,19 +1,5 @@
 import styled, { css } from "styled-components";
-
-const size = {
-  circle: {
-    widths: "150px",
-    heights: "150px",
-  },
-  square: {
-    widths: "150px",
-    heights: "150px",
-  },
-  response: {
-    widths: "100%",
-    heights: "100%",
-  },
-};
+import size from "../../Size.js"
 
 export const StyledImageContainer = styled.div`
   display: flex;
@@ -59,7 +45,7 @@ export const StyledImageSquare = css`
 
 export const StyledImageResponsive = css`
   ${({ shape }) =>
-    shape === "response" &&
+    shape === "fullsize" &&
     css`
       object-fit: cover;
       width: 100%;
