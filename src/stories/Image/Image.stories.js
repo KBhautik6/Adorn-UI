@@ -1,16 +1,19 @@
 import React from "react";
 import { Images } from "./Image";
 import { StyledImageContainer } from "./Image.styled";
+
 export default {
   title: "Image",
   component: Images,
 };
+
 export const Squareimages = () => (
   <StyledImageContainer>
     <Images src="https://picsum.photos/350/350/?blur" variant="square" />
     <Images src="https://picsum.photos/350/351/?blur" variant="square" />
   </StyledImageContainer>
 );
+
 export const Circularimages = () => (
   <StyledImageContainer>
     <Images src="https://picsum.photos/349/349/?blur" variant="circle" />

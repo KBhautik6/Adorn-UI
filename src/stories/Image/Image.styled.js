@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import size from "../../Size.js"
+import imageSize from "../../Size.js"
 
 export const StyledImageContainer = styled.div`
   display: flex;
@@ -15,8 +15,8 @@ export const StyledImage = styled.img`
   ${({ shape }) =>
     shape &&
     css`
-      width: ${size[shape].widths || "auto"};
-      height: ${size[shape].heights || "auto"};
+      width: ${imageSize[shape].widths || "auto"};
+      height: ${imageSize[shape].heights || "auto"};
     `};
 `;
 
@@ -45,7 +45,7 @@ export const StyledImageSquare = css`
 
 export const StyledImageResponsive = css`
   ${({ shape }) =>
-    shape === "fullsize" &&
+    shape === "fullimageSize" &&
     css`
       object-fit: cover;
       width: 100%;

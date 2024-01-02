@@ -1,5 +1,5 @@
 import React from "react";
-export const size = {
+export const imageSize = {
     circle: {
       widths: "150px",
       heights: "150px",
@@ -13,7 +13,8 @@ export const size = {
       heights: "100%",
     },
   };
-export const sizes = {
+  
+export const avatarSize = {
     small: {
       width: "34px",
       height: "34px",
