@@ -13,8 +13,7 @@ export const StyledInputLabel = styled.label`
   margin-right: 10px;
   font-weight: bold;
   font-size: 15px;
-  color: ${(props) =>
-    props.label === "Password" ?  theme.primary : theme.black};
+  color: ${(props) => (props.label === "Password" ? "red" : "black")};
 `;
 
 export const StyledUserInput = styled.input`

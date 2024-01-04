@@ -8,7 +8,7 @@ import {
 export const Input = ({ label, type }) => {
   return (
     <StyledContainer>
-      <StyledInputLabel label={label}>{label}</StyledInputLabel>
+      <StyledInputLabel>{label}</StyledInputLabel>
       <StyledUserInput type={type} />
       {label === "Password" && (
         <div style={{ color: "red" }}>*Password is incorrect</div>

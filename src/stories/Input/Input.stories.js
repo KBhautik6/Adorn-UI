@@ -1,6 +1,5 @@
 import React from "react";
 import { Input } from "./Input";
-import { StyledContainer } from "./Input.styled";
 
 export default {
   title: "UserInput",
@@ -8,8 +7,8 @@ export default {
 };
 
 export const UsernameInput = () => (
-  <StyledContainer>
+  <>
     <Input label="Username" type="text" />
-    <Input label="Password" type="password" />
-  </StyledContainer>
+    <Input label="Password" type="text" />
+  </>
 );
