@@ -17,10 +17,9 @@ export const StyledAvatarContainer = styled.div`
 `;
 
 export const StyledDisplayImage = styled.img`
-
   ${({ shape }) => css`
     border-radius: ${shape === "circle" ? "50%" : "10%"};
-    margin:0 5px;
+    margin: 0 5px;
     ${StyledAvatarSize};
   `}
 `;

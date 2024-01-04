@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import imageSize from "../../Size.js"
+import imageSize from "../../Size.js";
 
 export const StyledImageContainer = styled.div`
   display: flex;

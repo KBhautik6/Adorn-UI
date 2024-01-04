@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import theme from "../../theme";
-import size from "../../Size"
+import size from "../../Size";
 
 export const StyledBadgesContainer = styled.div`
   position: relative;
@@ -37,7 +37,7 @@ export const StyledBadgesIcon = styled(StyledBadgeIcon)`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  color:${theme.white};
+  color: ${theme.white};
   font-size: 12px;
   text-align: center;
 `;
