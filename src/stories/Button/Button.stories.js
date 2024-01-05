@@ -54,11 +54,7 @@ export const IconButton = () => (
 export const Text = () => (
   <StyledContainer>
     <Button type="primary" variant="text" text="Primary link button" />
-    <Button
-      type="secondary"
-      variant="text"
-      text="Secondary link button"
-    />
+    <Button type="secondary" variant="text" text="Secondary link button" />
     <Button type="success" variant="text" text="Succesor link button" />
     <Button type="warning" variant="text" text="Warning link button" />
   </StyledContainer>
