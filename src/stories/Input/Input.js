@@ -1,17 +1,26 @@
 import React from "react";
 import {
   StyledContainer,
-  StyledInputLabel,
-  StyledUserInput,
+  StyledIconPrefix,
+  StyledIconSuffix,
+  StyledInput
 } from "./Input.styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Input = ({ label, type }) => {
+
+export const Input = ({ type,id,placehold,prefix,suffix, }) => {
   return (
     <StyledContainer>
-      <StyledInputLabel>{label}</StyledInputLabel>
-      <StyledUserInput type={type} />
-      {label === "Password" && (
-        <div style={{ color: "red" }}>*Password is incorrect</div>
+      {prefix && (
+        <StyledIconPrefix>
+          <FontAwesomeIcon icon={prefix} />
+        </StyledIconPrefix>
+      )}
+      <StyledInput type={type} placehold={placehold} id={id}/>
+      {suffix && (
+        <StyledIconSuffix>
+          <FontAwesomeIcon icon={suffix} />
+      </StyledIconSuffix>
       )}
     </StyledContainer>
   );
