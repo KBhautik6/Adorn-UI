@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-export const Input = ({ type,id,placehold,prefix,suffix, }) => {
+export const Input = ({ type,id,placeholder,prefix,suffix, }) => {
   return (
     <StyledContainer>
       {prefix && (
@@ -16,7 +16,7 @@ export const Input = ({ type,id,placehold,prefix,suffix, }) => {
           <FontAwesomeIcon icon={prefix} />
         </StyledIconPrefix>
       )}
-      <StyledInput type={type} placehold={placehold} id={id}/>
+      <StyledInput type={type} placeholder={placeholder} id={id}/>
       {suffix && (
         <StyledIconSuffix>
           <FontAwesomeIcon icon={suffix} />
