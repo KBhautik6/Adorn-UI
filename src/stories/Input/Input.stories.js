@@ -14,9 +14,9 @@ export const UsernameInput = () => (
   <>
   <StyledInputContainer>
     <Typography text="Username *"/>
-    <Input type="text" placehold="Enter the name" id="Name" prefix={faUser}/>
+    <Input type="text" placeholder="Enter the name" id="Name" prefix={faUser}/>
     <Typography text="Password*" type="primary"/>
-    <Input type="text" placehold="Enter the password" id="Password" suffix={faUser}/>
+    <Input type="text" placeholder="Enter the password" id="Password" suffix={faUser}/>
     <Typography text="Password is incorrect" type="primary"/>
   </StyledInputContainer>
   </>
