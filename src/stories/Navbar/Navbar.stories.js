@@ -12,6 +12,7 @@ import {
 } from './Navbar.styled';
 import Button from '../Button/Button';
 import Badges from '../Badges/Badges';
+import Typography from "../Typography/Typography"
 
 export default {
   title: 'Navbar',
@@ -22,7 +23,7 @@ export const ListNavbar = () => (
   <div>
     <Navbar>
       <StyledNavbarSection>
-        <h2>Adorn Box</h2>
+        <Typography tag="h2" type="primary" text="Adorn Box"/>
         <StyledNavbarContentWrapper>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <StyledNavbarSearch
