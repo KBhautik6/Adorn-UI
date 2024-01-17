@@ -44,14 +44,6 @@ export const StyledNavbarContentWrapper = styled.div`
   align-items: center;
 `;
 
-export const StyledNavbarSearch = styled.input`
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 200px;
-`;
-
 export const StyledNavbarIconWrapper = styled.div`
   display: flex;
   align-items: center;

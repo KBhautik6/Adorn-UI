@@ -1,21 +1,21 @@
-import React from 'react';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
 import {
   StyledNavbarSection,
   StyledNavbarContentWrapper,
   StyledNavbarIconWrapper,
   StyledNavbarLinkContainer,
   StyledNavbarUnorderList,
-  StyledNavbarSearch,
   StyledNavbarLists,
   StyledNavbarListLink,
-} from './Navbar.styled';
-import Button from '../Button/Button';
-import Badges from '../Badges/Badges';
-import Typography from "../Typography/Typography"
+} from "./Navbar.styled";
+import Button from "../Button/Button";
+import Badges from "../Badges/Badges";
+import Typography from "../Typography/Typography";
+import Input from "../Input/Input";
 
 export default {
-  title: 'Navbar',
+  title: "Navbar",
   component: Navbar,
 };
 
@@ -23,13 +23,21 @@ export const ListNavbar = () => (
   <div>
     <Navbar>
       <StyledNavbarSection>
-        <Typography tag="h2" type="primary" text="Adorn Box"/>
+        <Typography tag="h2" type="primary" text="Adorn Box" />
         <StyledNavbarContentWrapper>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <StyledNavbarSearch
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Input
               type="text"
               placeholder="Search"
-              style={{ marginRight: '10px' }}
+              id="Name"
+              style={{
+                marginRight: "10px",
+                padding: "8px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                boxSizing: "border-box",
+                width: "200px",
+              }}
             />
             <Button type="secondary" variant="outlined" text="Login" />
           </div>
