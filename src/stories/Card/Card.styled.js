@@ -1,4 +1,3 @@
-// Card.styled.js
 import styled from 'styled-components';
 import theme from '../../theme'
 
@@ -17,6 +16,7 @@ export const StyledCardBox = styled.div`
   border-radius: 5px;
   padding: 7px;
   transition: 300ms ease;
+  
   &:hover,
   &:active {
     box-shadow: 5px 4px 8px rgba(3, 0, 0, 0.1);
