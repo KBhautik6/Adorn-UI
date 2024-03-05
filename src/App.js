@@ -1,3 +1,3 @@
-import {index} from './index';
+import { index } from "./index";
 
-console.warn(index(),"app file");
+console.warn(index(), "app file");
