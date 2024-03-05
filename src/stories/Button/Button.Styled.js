@@ -13,8 +13,7 @@ export const StyledButtonComponent = styled.button`
 
   background-color: ${({ type }) =>
     type === "secondary" ? theme.white : theme?.[type]};
-  color: ${({ type }) =>
-    type === "secondary" ? theme?.[type] : theme.white};
+  color: ${({ type }) => (type === "secondary" ? theme?.[type] : theme.white)};
 `;
 
 export const StyledOutlineButton = styled(StyledButtonComponent)`
